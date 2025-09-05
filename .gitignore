@@ -1,0 +1,13 @@
+# Node/Next
+node_modules
+.next
+out
+dist
+.cache
+# Vercel local metadata
+.vercel
+# Misc
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
