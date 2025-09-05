@@ -8,7 +8,7 @@ const URL = `${BASE}/v1/completions`;
 
 // --- Tuning & guards ---
 const MAX_PROMPT_CHARS = 24000;   // keep under typical 8k context when combined with instructions
-const MAX_TOKENS_OUT   = 1024;    // smaller = less chance of truncation/garbage
+const MAX_TOKENS_OUT = (process.env.VERCEL ? 512 : 1024);    // smaller = less chance of truncation/garbage
 const TEMP              = 0.0;    // deterministic JSON
 const RETRIES           = 2;      // retry both stages
 
